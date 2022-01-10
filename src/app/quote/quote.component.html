@@ -1,0 +1,17 @@
+<div class="container">
+    <div>
+        <h1>There's more to life than just living!</h1>
+    </div>
+    <div *ngFor = 'let quote of quotes; let i = index'>
+        <ul>
+            <li>
+                {{quote.name}}
+                <button (click)= 'toggleDetails(i)'>Toggle Details</button>
+                <app-quote-detail *ngIf = 'quote.showDescription' [quote]= 'quote'></app-quote-detail>
+            </li>
+        </ul>
+    </div>
+    <p *ngIf = 'quotes.length > 12'>
+        You have very many quotes
+    </p>
+</div>
