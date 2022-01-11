@@ -98,6 +98,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/quota",
+            "netlifyToken": "qON6hNEGWia1B8CQPPn70LFSm3xQ-Ttqm_pvbh3FPvo",
+            "siteId": "7146cd52-4b8e-40aa-a4fe-804be5416e85"
+          }
         }
       }
     }
