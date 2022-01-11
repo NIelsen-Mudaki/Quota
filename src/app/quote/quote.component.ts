@@ -9,9 +9,9 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote(1,'Aluta Continua!','Do not stop working to achieve what you want.'),
-    new Quote(2, 'Impossible is nothing', 'You can not be stopped!'),
-    new Quote(3, 'I have a dream', 'Dream on youngblood!!')
+    new Quote('Aluta Continua!','Do not stop working to achieve what you want.'),
+    new Quote('Impossible is nothing', 'You can not be stopped!'),
+    new Quote('I have a dream', 'Dream on youngblood!!')
   ];
 
   toggleDetails(index:number) {
