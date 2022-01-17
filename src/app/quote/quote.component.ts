@@ -9,9 +9,9 @@ import {Quote} from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes:Quote[] = [
-    new Quote('Aluta Continua!','Do not stop working to achieve what you want.'),
-    new Quote('Impossible is nothing', 'You can not be stopped!'),
-    new Quote('I have a dream', 'Dream on youngblood!!')
+    new Quote('Aluta Continua!','Do not stop working to achieve what you want.', new Date(2021, 2, 14)),
+    new Quote('Impossible is nothing', 'You can not be stopped!', new Date(2021, 10, 13)),
+    new Quote('I have a dream', 'Dream on youngblood!!', new Date(2017, 4, 5))
   ];
 
   toggleDetails(index:number) {
@@ -31,7 +31,6 @@ export class QuoteComponent implements OnInit {
 
   addNewQuote(quote: Quote){
     let quoteLength = this.quotes.length;
-    
     this.quotes.push(quote);
   }
 

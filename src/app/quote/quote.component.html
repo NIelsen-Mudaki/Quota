@@ -10,8 +10,10 @@
                     <li>
                         {{quote.name}}
                         <button (click)= 'toggleDetails(i)' class="btn btn-outline-primary">See More</button>
-                        <app-quote-detail *ngIf = 'quote.showDescription' [quote]= 'quote' (isComplete) = 'deleteQuote($event,i)' ></app-quote-detail>
-                    </li>
+                        <app-quote-detail *ngIf = 'quote.showDescription' [quote]= 'quote' (isComplete) = 'deleteQuote($event,i)' ></app-quote-detail><br>
+                        Written on {{quote.getDate|date}}
+                    </li>                 
+                    
                 </ul>
             </div>
         </div>
