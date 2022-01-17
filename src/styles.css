@@ -1,7 +1,25 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
 .col-md-6{
-    border: 1px solid lightblue;
+    border: 1px solid #00FFF5;
     border-radius: 5px;
-    padding: 10px;
+    padding: 30px;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+.img{
+    border: none;
+}
+h1{
+    font-size: 64px;
+}
+.title{
+    background-color: #00FFF5;
+    height: 100px;
+    width: auto;
 }
